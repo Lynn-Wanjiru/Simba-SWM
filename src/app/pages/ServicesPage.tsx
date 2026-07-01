@@ -6,7 +6,6 @@ import svcImg2 from '@/assets/uploads/services2.png'
 import svcImg3 from '@/assets/uploads/service3.png'
 import svcImg4 from '@/assets/uploads/recycling-world.jpeg'
 import svcImg5 from '@/assets/uploads/waste.jpeg'
-import paperCollectionImg from '@/assets/uploads/paper-collection.jpeg'
 import docDestructionImg from '@/assets/uploads/document destructions.png'
 import africaMap from '@/assets/uploads/africa-2.png'
 
