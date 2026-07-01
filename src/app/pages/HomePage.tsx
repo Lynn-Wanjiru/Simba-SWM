@@ -25,7 +25,7 @@ const wwdCards = [
 
 const stats = [
   { n: 1500, suffix: '+', l: 'Tons Recovered Monthly' },
-  { n: 1500, suffix: '+', l: 'Nationwide Collection Network' },
+  { n: 'Nationwide', l: 'Collection Network' },
   { n: 'Multiple', l: 'Strategic Collection Sites' },
   { n: 'Trusted', l: 'Industry Partnerships' },
 ]
@@ -37,7 +37,7 @@ function AnimatedCount({ target, suffix = '' }: { target: number; suffix?: strin
     let frameId = 0
     let timeoutId = window.setTimeout(() => {
       let startTime: number | null = null
-      const duration = 1400
+      const duration = 3600
 
       const tick = (currentTime: number) => {
         if (startTime === null) startTime = currentTime
