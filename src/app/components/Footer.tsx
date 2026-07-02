@@ -60,7 +60,7 @@ export default function Footer() {
             </li>
             <li style={{ padding: '5px 0' }}>
               <a
-                href="mailto:info@simbawaste.co.ke?subject=Hello%20Simba%20Waste%20Management"
+                href="mailto:info@simbawaste.com?subject=Hello%20Simba%20Waste%20Management"
                 style={footerLinkStyle}
                 onMouseEnter={e => (e.currentTarget.style.color = '#22c55e')}
                 onMouseLeave={e => (e.currentTarget.style.color = '#ffffff')}
