@@ -71,76 +71,7 @@ export default function ContactPage() {
           </div>
 
           {/* Contact form */}
-          <div className="rr">
-            <div style={{ background: '#fff', borderRadius: '20px', padding: '44px', boxShadow: '0 8px 40px rgba(10,25,64,0.08)', border: '1.5px solid #e2e8f0' }}>
-              {submitted ? (
-                <div style={{ textAlign: 'center', padding: '40px 0' }}>
-                  <CheckCircle2 size={60} color="#22c55e" style={{ margin: '0 auto 20px' }} />
-                  <h3 style={{ fontFamily: "'Poppins',sans-serif", fontSize: '22px', fontWeight: 800, color: '#0a1940', marginBottom: '12px' }}>Message Sent!</h3>
-                  <p style={{ color: '#64748b', fontSize: '15px', lineHeight: 1.7 }}>Thank you for reaching out. Our team will get back to you shortly.</p>
-                </div>
-              ) : (
-                <>
-                  <h3 style={{ fontFamily: "'Poppins',sans-serif", fontSize: '20px', fontWeight: 800, color: '#0a1940', marginBottom: '28px' }}>Send Us a Message</h3>
-                  <form onSubmit={handleSubmit}>
-                    {[
-                      { key: 'name', label: 'Full Name', type: 'text', placeholder: 'John Doe' },
-                      { key: 'email', label: 'Email Address', type: 'email', placeholder: 'john@company.com' },
-                      { key: 'company', label: 'Company / Organization', type: 'text', placeholder: 'Your Company Ltd' },
-                    ].map(f => (
-                      <div key={f.key} style={{ marginBottom: '20px' }}>
-                        <label style={{ display: 'block', fontSize: '13px', fontWeight: 700, color: '#0a1940', marginBottom: '6px' }}>{f.label}</label>
-                        <input
-                          type={f.type}
-                          placeholder={f.placeholder}
-                          value={(form as any)[f.key]}
-                          onChange={e => setForm({ ...form, [f.key]: e.target.value })}
-                          style={{
-                            width: '100%', padding: '11px 14px', borderRadius: '8px',
-                            border: '1.5px solid #e2e8f0', fontSize: '14px', outline: 'none',
-                            transition: 'border-color 0.2s', fontFamily: 'inherit',
-                          }}
-                          onFocus={e => (e.target.style.borderColor = '#22c55e')}
-                          onBlur={e => (e.target.style.borderColor = '#e2e8f0')}
-                        />
-                      </div>
-                    ))}
-                    <div style={{ marginBottom: '24px' }}>
-                      <label style={{ display: 'block', fontSize: '13px', fontWeight: 700, color: '#0a1940', marginBottom: '6px' }}>Message</label>
-                      <textarea
-                        placeholder="Tell us about your waste management needs..."
-                        rows={4}
-                        value={form.message}
-                        onChange={e => setForm({ ...form, message: e.target.value })}
-                        style={{
-                          width: '100%', padding: '11px 14px', borderRadius: '8px',
-                          border: '1.5px solid #e2e8f0', fontSize: '14px', outline: 'none',
-                          transition: 'border-color 0.2s', fontFamily: 'inherit', resize: 'vertical',
-                        }}
-                        onFocus={e => (e.target.style.borderColor = '#22c55e')}
-                        onBlur={e => (e.target.style.borderColor = '#e2e8f0')}
-                      />
-                    </div>
-                    <button
-                      type="submit"
-                      style={{
-                        width: '100%', background: 'linear-gradient(135deg,#22c55e,#16a34a)',
-                        color: '#fff', padding: '14px', borderRadius: '8px',
-                        fontWeight: 700, fontSize: '15px', cursor: 'pointer', border: 'none',
-                        display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
-                        transition: 'all 0.2s', boxShadow: '0 6px 24px rgba(34,197,94,0.3)',
-                      }}
-                      onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 10px 32px rgba(34,197,94,0.45)' }}
-                      onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 6px 24px rgba(34,197,94,0.3)' }}
-                    >
-                      <Send size={16} /> Send Message
-                    </button>
-                  </form>
-                </>
-              )}
-            </div>
-          </div>
-        </div>
+      
       </section>
 
       <div className="site-divider" />
