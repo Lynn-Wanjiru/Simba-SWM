@@ -163,7 +163,7 @@ export default function HomePage() {
             background: '#fff', borderRadius: '14px', padding: '14px 20px',
             boxShadow: '0 8px 32px rgba(0,0,0,0.2)', display: 'flex', alignItems: 'center', gap: '12px',
           }}>
-            <div style={{ fontSize: '24px', fontWeight: 900, color: '#0a1940', fontFamily: "'Poppins',sans-serif" }}><AnimatedCount target={1500} suffix="+" /></div>
+            <div style={{ fontSize: '24px', fontWeight: 900, color: '#0a1940', fontFamily: "'Poppins',sans-serif" }}><AnimatedCount target={2500} suffix="+" /></div>
             <div style={{ fontSize: '11px', color: '#64748b', fontWeight: 500, lineHeight: 1.4 }}>Tons Recovered<br />Every Month</div>
           </div>
         </div>
