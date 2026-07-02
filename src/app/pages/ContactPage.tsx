@@ -88,7 +88,7 @@ export default function ContactPage() {
               {
                 icon: <Mail size={20} color="#22c55e" />,
                 label: 'Email',
-                value: 'info@simbawaste.co.ke',
+                value: 'info@simbawaste.com',
               },
               {
                 icon: <Phone size={20} color="#22c55e" />,
