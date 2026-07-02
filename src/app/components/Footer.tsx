@@ -65,7 +65,7 @@ export default function Footer() {
                 onMouseEnter={e => (e.currentTarget.style.color = '#22c55e')}
                 onMouseLeave={e => (e.currentTarget.style.color = '#ffffff')}
               >
-                info@simbawaste.co.ke
+                info@simbawaste.com
               </a>
             </li>
             <li style={{ padding: '5px 0' }}>
