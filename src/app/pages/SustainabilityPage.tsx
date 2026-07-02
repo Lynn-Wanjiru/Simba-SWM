@@ -112,15 +112,49 @@ export default function SustainabilityPage() {
 
   return (
     <div style={{ paddingTop: '68px' }}>
-      {/* Sus hero */}
-      <div className="sus-hero" style={{ height: '420px', position: 'relative', overflow: 'hidden' }}>
+      {/* Sus HERO*/}
+      <div
+  className="sus-hero"
+  style={{
+    position: 'relative',
+    overflow: 'hidden',
+    minHeight: '420px',
+  }}
+>
         <img
-          src={SUS_HERO}
-          alt="Circular economy"
-          style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.45)', display: 'block' }}
-        />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.44)' }} />
-        <div className="sus-hero-content" style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '60px' }}>
+  src={SUS_HERO}
+  alt="Circular economy"
+  style={{
+    position: 'absolute',
+    inset: 0,
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    objectPosition: 'center center',
+    filter: 'brightness(0.5)',
+    display: 'block',
+  }}
+/>
+        <div
+  style={{
+    position: 'absolute',
+    inset: 0,
+    background:
+      'linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.55))',
+  }}
+/>
+        <div
+  className="sus-hero-content"
+  style={{
+    position: 'absolute',
+    inset: 0,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    padding: '60px',
+    zIndex: 2,
+  }}
+>
           <h2 style={{ fontFamily: "'Poppins',sans-serif", fontSize: 'clamp(30px,5vw,52px)', fontWeight: 900, color: '#fff', lineHeight: 1.1, marginBottom: '16px' }}>
             Building a<br /><span style={{ color: '#4ade80' }}>Circular Economy</span>
           </h2>
