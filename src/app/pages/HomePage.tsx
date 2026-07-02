@@ -24,7 +24,7 @@ const wwdCards = [
 ]
 
 const stats = [
-  { n: 1500, suffix: '+', l: 'Tons Recovered Monthly' },
+  { n: 2500, suffix: '+', l: 'Tons Recovered Monthly' },
   { n: 'Nationwide', l: 'Collection Network' },
   { n: 'Multiple', l: 'Strategic Collection Sites' },
   { n: 'Trusted', l: 'Industry Partnerships' },
