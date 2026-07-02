@@ -270,26 +270,67 @@ body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
     grid-column: 1 / -1;
   }
 
-  .sus-hero {
-    height: auto !important;
-    min-height: 520px !important;
-    background: linear-gradient(135deg, #182315, #0d1d0b);
-  }
+  /* ===============================
+   Sustainability Hero - Mobile
+   =============================== */
 
-  .sus-hero img {
-    position: absolute;
-    inset: 0;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
-    object-position: center bottom;
-  }
+.sus-hero {
+  position: relative !important;
+  overflow: hidden !important;
+  height: 620px !important;
+  min-height: 620px !important;
+  background: #07130b;
+}
 
-  .sus-hero-content {
-    position: relative !important;
-    padding: 42px 22px 220px !important;
-    justify-content: flex-start !important;
-  }
+.sus-hero img {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+
+  /* Fill the hero without distortion */
+  object-fit: cover !important;
+
+  /* Keeps the important lower part of the image visible */
+  object-position: center 70% !important;
+
+  display: block;
+  filter: brightness(.5);
+}
+
+.sus-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0,0,0,.35) 0%,
+      rgba(0,0,0,.45) 45%,
+      rgba(0,0,0,.55) 100%
+    );
+  pointer-events: none;
+}
+
+.sus-hero-content {
+  position: relative !important;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  padding: 46px 22px !important;
+}
+
+.sus-hero-content h2 {
+  max-width: 320px;
+}
+
+.sus-hero-content p {
+  max-width: 320px;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
 
   .sus-page-section {
     padding: 58px 20px !important;
