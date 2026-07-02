@@ -277,8 +277,8 @@ body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
 .sus-hero {
   position: relative !important;
   overflow: hidden !important;
-  height: 620px !important;
-  min-height: 620px !important;
+  height:auto !important;
+  min-height: 460px !important;
   background: #07130b;
 }
 
@@ -292,10 +292,10 @@ body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
   object-fit: cover !important;
 
   /* Keeps the important lower part of the image visible */
-  object-position: center 70% !important;
+  object-position: center 35% !important;
 
   display: block;
-  filter: brightness(.5);
+  filter: brightness(.65);
 }
 
 .sus-hero::after {
@@ -305,9 +305,9 @@ body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
   background:
     linear-gradient(
       180deg,
-      rgba(0,0,0,.35) 0%,
-      rgba(0,0,0,.45) 45%,
-      rgba(0,0,0,.55) 100%
+      rgba(0,0,0,.15) 0%,
+      rgba(0,0,0,.25) 45%,
+      rgba(0,0,0,.4) 100%
     );
   pointer-events: none;
 }
